@@ -15,12 +15,11 @@ $(document).ready(function(){
 
     $("#chat-form .btn").on("click", function(){
     
-       $(".customer-msg").removeClass("hide").fadeIn(); // show message
-
-       var cm = $("#chat-form input").val();
-     
-       createChatElement(".message-list","Nicholas", cm, "customer");
-       $("#chat-form input").val("");    
+       //------ show message typed by customer
+            $(".customer-msg").removeClass("hide").fadeIn(); 
+            var cm = $("#chat-form input").val();
+            createChatElement(".message-list","Nicholas", cm, "customer");
+            $("#chat-form input").val("");    
        
        createChatElement(".message-list","Mary", "To reset your password just click on the My details menu. Once you have clicked the menu a new page will appear. Select the link Change password. From this link it will take you to a screen where you cna change your password" , "reply")
       

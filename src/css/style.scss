@@ -8,11 +8,11 @@
     width: 0; 
     height: 0; 
     border-top: 38px solid #DFDFDF;
-    border-bottom: 38px solid transparent;
+    border-left: 0px solid transparent;
     border-right: 38px solid transparent;
     position:absolute;
     right:30px;
-    bottom:20px;
+    bottom:50px;
 
 }
 
@@ -74,7 +74,9 @@
     .box-triangle{
         @include boxTriangle;
     }
-
+    .form-wrapper{
+        margin-top:40px;
+    }
     .chat-now{
         text-align:right;
         text-decoration: underline;
@@ -82,13 +84,12 @@
         margin:10px 0;
         font-weight:bold;
         border: 0px;
-        padding:20px 5px 0px 5px;
+        padding:0 10px;
+        
 
     }
     .chat-send-form{
-        padding:20px 0 10px 5px;
-
-
+        
         .btn{
             background: transparent;
             border: 1px solid #fff;
