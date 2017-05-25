@@ -12,7 +12,7 @@
     border-right: 38px solid transparent;
     position:absolute;
     right:30px;
-    bottom:0px;
+    bottom:20px;
 
 }
 
@@ -36,17 +36,39 @@
     
     .chat-message-box{
         background:#DFDFDF;
-        padding:20px;
         color:#707070;
         margin-top:10px;
         @include borderRadius;
         border:2px solid #fff;
-        min-height:130px;
+        min-height:140px;
+        max-height: 400px;
+        overflow: hidden;
+        padding:10px;
+        margin-bottom:25px;
         
-        &.start{
+        .start{
             font-size:20px;
             font-weight:bold;
+            
         }
+        .message-list{
+            
+            .chat-message{
+                font-size:12px;
+                padding:10px;
+                @include borderRadius;
+
+                span{
+                    color:#000;
+                }
+
+                &:nth-child(even){
+                    background:#E7E7E7;
+                    
+                }
+            }
+            
+        } 
     }
     .box-triangle{
         @include boxTriangle;
@@ -59,10 +81,24 @@
         margin:10px 0;
         font-weight:bold;
         border: 0px;
-        position: absolute;
-        bottom:0px;
-        right:10px;
 
+    }
+    .chat-send-form{
+        padding:20px 0 10px 5px;
+
+
+        .btn{
+            background: transparent;
+            border: 1px solid #fff;
+            color:#fff;
+            font-weight: bold;
+            padding:5px;
+        }
+
+        input{
+            width:240px;
+            padding:5px;
+        }
     }
 
     .hide{
