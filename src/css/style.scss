@@ -60,6 +60,7 @@
 
                 span{
                     color:#000;
+                    font-weight:bold;
                 }
 
                 &:nth-child(even){
@@ -77,10 +78,11 @@
     .chat-now{
         text-align:right;
         text-decoration: underline;
-        font-size:12px;
+        font-size:14px;
         margin:10px 0;
         font-weight:bold;
         border: 0px;
+        padding:20px 5px 0px 5px;
 
     }
     .chat-send-form{

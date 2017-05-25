@@ -37,7 +37,8 @@
       -moz-border-radius: 12px;
       border-radius: 5px; }
       .web-chat-container .chat-message-box .message-list .chat-message span {
-        color: #000; }
+        color: #000;
+        font-weight: bold; }
       .web-chat-container .chat-message-box .message-list .chat-message:nth-child(even) {
         background: #E7E7E7; }
   .web-chat-container .box-triangle {
@@ -52,10 +53,11 @@
   .web-chat-container .chat-now {
     text-align: right;
     text-decoration: underline;
-    font-size: 12px;
+    font-size: 14px;
     margin: 10px 0;
     font-weight: bold;
-    border: 0px; }
+    border: 0px;
+    padding: 20px 5px 0px 5px; }
   .web-chat-container .chat-send-form {
     padding: 20px 0 10px 5px; }
     .web-chat-container .chat-send-form .btn {

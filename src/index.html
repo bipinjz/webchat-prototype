@@ -1,27 +1,20 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </head>
     <body>
         <div class="web-chat-container">
             <h2>WebChat</h2>
             <!--Chat Message Box-->
             <div class="chat-message-box ">
-                <div class="start ">
+                <div class="start">
                     Start Chatting by <br/> Clicking "Chat Now"
                 </div>
                 <div class="message-list hide">
-                    <div class="chat-message">
-                        <span>Mary: </span> Hi
-                    </div>
-                    <div class="chat-message">
-                        <span>Mary: </span> Hi
-                    </div>
-                    <div class="chat-message">
-                        <span>Mary: </span> Hi
-                    </div>
-                    <div class="chat-message">
-                        <span>Mary: </span> Hi
+                    <div class="chat-message hide">
+                        <span>Mary: </span> "Hi Nicholas this is Mary from Abank. How may I help you today?"
                     </div>
                    
                 </div>
@@ -34,12 +27,23 @@
 
             <!--Chat Button and form-->
             <div class="form-wrapper">
-                <div class="chat-now hide">
+                <div class="chat-now" id="chat-now">
                     Chat Now
                 </div>
-                <div class="chat-send-form">
+                <div class="chat-send-form hide" id="chat-form">
                     <input type="text" /> <button class="btn" id="send">Send</button>
                 </div>
+            </div>
+
+            <!--chat messages-->
+            <div class="hide">
+             <div class="chat-message customer-msg ">
+                <span>Nicholas: </span> 
+            </div>
+
+            <div class="chat-message reply">
+                <span>Mary: </span> "To reset your password just click on the My details menu. Once you have clicked the menu a new page will appear. Select the link Change password. From this link it will take you to a screen where you cna change your password"
+            </div>
             </div>
         </div>
     </body>
